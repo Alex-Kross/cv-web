@@ -5,35 +5,45 @@
         <meta title="resume">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-        <link rel='stylesheet' href='style.css'>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel='stylesheet' href='style.css'>
+        
 
     </head>
     <body>
         <header class="header">
             <div class="container">
                 <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-                        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                        <li class="nav-item"><a href="#objective" class="nav-link">Objective</a></li>
-                        <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-                        <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
-                        <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-                    </ul>
+                    <div class="drop">
+                        <button class="nav-btn">&#9776</button>
+                        <ul class="nav-list">
+                            <li class="nav-item2"><a href="#contacts" class="nav-link">Contacts</a></li>
+                            <li class="nav-item2"><a href="#skills" class="nav-link">Skills</a></li>
+                            <li class="nav-item2"><a href="#objective" class="nav-link">Objective</a></li>
+                            <li class="nav-item2"><a href="#experience" class="nav-link">Experience</a></li>
+                            <li class="nav-item2"><a href="#languages" class="nav-link">Languages</a></li>
+                            <li class="nav-item2"><a href="#education" class="nav-link">Education</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </header>
         <main class="main">
             <div class="container main-container">
                 <section class="section" id="profile">
-                    <img class="image" src="assets/img/cvPhoto2.png" alt="My photo" width="150" height="150">
-                    <div class="profile-info">
-                    <h1 class="section-title">ARTYOM KARPUK</h1>
-                    <p>JUNIOR JAVA DEVELOPER</p>
-                    </div>  
+                    <div class="profile-content">
+                        <div class="profile-info">
+                            <h1 class="section-title">ARTYOM KARPUK</h1>
+                            <p>JUNIOR JAVA DEVELOPER</p>
+                        </div>  
+                        <div class="image">
+                            <img src="assets/img/cvPhoto2.png" alt="My photo" width="150" height="150">
+                        </div>
+                    </div>
                 </section>
                 <section class="section" id="contacts">
                     <h2 class="section-title">CONTACTS</h2>
@@ -176,10 +186,17 @@
                 </section>
             </div>
         </main>
-        <footer class="footer">
-            <div class="container">
-
-            </div>
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#contacts" class="nav-link px-2 text-muted">Contacts</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link px-2 text-muted">Skills</a></li>
+            <li class="nav-item"><a href="#objective" class="nav-link px-2 text-muted">Objective</a></li>
+            <li class="nav-item"><a href="#experience" class="nav-link px-2 text-muted">Experience</a></li>
+            <li class="nav-item"><a href="#languages" class="nav-link px-2 text-muted">Languages</a></li>
+            <li class="nav-item"><a href="#education" class="nav-link px-2 text-muted">Education</a></li>
+          </ul>
+          <p class="text-center text-muted">© 2023 Artyom, Inc</p>
         </footer>
+        
     </body>
 </html>
